@@ -32,11 +32,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework.authtoken',
-    'atracoes',
-    'core',
-    'comentarios',
-    'avaliacoes',
-    'endereco',
+    'Pontos_turisticos.atracoes',
+    'Pontos_turisticos.core',
+    'Pontos_turisticos.comentarios',
+    'Pontos_turisticos.avaliacoes',
+    'Pontos_turisticos.endereco',
     'django_filters',
 ]
 
