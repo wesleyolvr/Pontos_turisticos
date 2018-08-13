@@ -1,5 +1,5 @@
 from rest_framework.serializers import ModelSerializer
-from comentarios.models import Comentario
+from Pontos_turisticos.comentarios.models import Comentario
 
 class ComentarioSerializer(ModelSerializer):
     class Meta:

@@ -5,7 +5,7 @@ from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework.viewsets import ModelViewSet
 from django.contrib.auth import get_user_model
 
-from core.models import PontoTuristico
+from Pontos_turisticos.core.models import PontoTuristico
 from .serializers import PontoturisticosSerializer, LoginSerializer
 
 User = get_user_model()

@@ -2,8 +2,8 @@ from django.contrib.auth.models import User
 from rest_framework.fields import SerializerMethodField
 from rest_framework.serializers import ModelSerializer
 
-from atracoes.api.serializers import AtracaoSerializer
-from core.models import PontoTuristico
+from Pontos_turisticos.atracoes.api.serializers import AtracaoSerializer
+from Pontos_turisticos.core.models import PontoTuristico
 
 
 class PontoturisticosSerializer(ModelSerializer):
