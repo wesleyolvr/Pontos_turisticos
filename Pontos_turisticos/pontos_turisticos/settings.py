@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'pontos_turisticos.urls'
+ROOT_URLCONF = 'Pontos_turisticos.pontos_turisticos.urls'
 
 TEMPLATES = [
     {
