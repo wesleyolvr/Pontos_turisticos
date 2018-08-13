@@ -18,7 +18,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
-ALLOWED_HOSTS = ['pontos--turisticos.herokuapp.com','localhost:8000']
+ALLOWED_HOSTS = ['pontos--turisticos.herokuapp.com','localhost','127.0.0.1']
 
 
 # Application definition
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'pontos_turisticos.wsgi.application'
+WSGI_APPLICATION = 'Pontos_turisticos.pontos_turisticos.wsgi.application'
 
 
 # Database

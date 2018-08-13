@@ -11,7 +11,7 @@ import os
 from django.core.wsgi import get_wsgi_application
 from dj_static import Cling
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "pontos_turisticos.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Pontos_turisticos.pontos_turisticos.settings")
 application = Cling(get_wsgi_application())
 
 
