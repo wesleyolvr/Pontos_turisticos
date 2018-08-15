@@ -69,7 +69,4 @@ class PontoturisticosSerializer(ModelSerializer):
         return "%s %s" % (obj.nome,obj.descricao)
 
 
-class LoginSerializer(ModelSerializer):
-    class Meta:
-        model = User
-        fields = ('')
+

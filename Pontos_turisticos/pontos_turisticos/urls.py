@@ -16,7 +16,7 @@ Including another URLconf
 from atracoes.api.viewsets import AtracaoViewSet
 from avaliacoes.api.viewsets import AvaliacaoViewSet
 from comentarios.api.viewsets import ComentarioViewSet
-from core.api.viewsets import PontoTuristicoViewSet, LoginViewSet
+from core.api.viewsets import PontoTuristicoViewSet
 from core.models import PontoTuristico
 from django.conf import settings
 from django.conf.urls import include
@@ -33,7 +33,6 @@ router.register(r'atracoes', AtracaoViewSet)
 router.register(r'enderecos', EnderecoViewSet)
 router.register(r'comentarios', ComentarioViewSet)
 router.register(r'avaliacoes', AvaliacaoViewSet)
-router.register(r'login', LoginViewSet)
 
 
 

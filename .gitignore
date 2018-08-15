@@ -4,11 +4,9 @@
 *.pyc
 __pycache__/
 local_settings.py
-<<<<<<< HEAD
+
 /staticfiles
-=======
 staticfiles
->>>>>>> 23627582f9b5e3ac39eb0da64dcf4e36606d0f92
 # If your build process includes running collectstatic, then you probably don't need or want to include staticfiles/
 # in your Git repository. Update and uncomment the following line accordingly.
 # <django-project-name>/staticfiles/

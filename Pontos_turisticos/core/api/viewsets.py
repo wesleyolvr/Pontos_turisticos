@@ -6,14 +6,9 @@ from rest_framework.viewsets import ModelViewSet
 from django.contrib.auth import get_user_model
 
 from core.models import PontoTuristico
-from .serializers import PontoturisticosSerializer, LoginSerializer
+from .serializers import PontoturisticosSerializer
 
 User = get_user_model()
-
-class LoginViewSet(ModelViewSet):
-    serializer_class = LoginSerializer
-    permission_classes = (IsAdminUser,)
-    queryset = User.objects.all()
 
 class PontoTuristicoViewSet(ModelViewSet):
     serializer_class = PontoturisticosSerializer
