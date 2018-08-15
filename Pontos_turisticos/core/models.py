@@ -1,9 +1,9 @@
 from django.db import models
 
-from atracoes.models import Atracao
-from avaliacoes.models import Avaliacao
-from comentarios.models import Comentario
-from endereco.models import Endereco
+from Pontos_turisticos.atracoes.models import Atracao
+from Pontos_turisticos.avaliacoes.models import Avaliacao
+from Pontos_turisticos.comentarios.models import Comentario
+from Pontos_turisticos.endereco.models import Endereco
 
 
 class Doc_identificacao(models.Model):

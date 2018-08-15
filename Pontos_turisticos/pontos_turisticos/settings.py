@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'pontos_turisticos.urls'
+ROOT_URLCONF = 'Pontos_turisticos.pontos_turisticos.urls'
 
 TEMPLATES = [
     {
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'pontos_turisticos.wsgi.application'
+WSGI_APPLICATION = 'Pontos_turisticos.pontos_turisticos.wsgi.application'
 
 
 # Database

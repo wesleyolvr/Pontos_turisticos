@@ -1,14 +1,14 @@
 from django.contrib.auth.models import User
 from rest_framework.fields import SerializerMethodField
 from rest_framework.serializers import ModelSerializer
-from endereco.api.serializers import EnderecoSerializer
-from atracoes.api.serializers import AtracaoSerializer
-from avaliacoes.api.serializers import AvaliacaoSerializer
-from comentarios.api.serializers import ComentarioSerializer
-from core.models import PontoTuristico
-from atracoes.models import Atracao
-from endereco.models import Endereco
-from core.models import Doc_identificacao
+from Pontos_turisticos.endereco.api.serializers import EnderecoSerializer
+from Pontos_turisticos.atracoes.api.serializers import AtracaoSerializer
+from Pontos_turisticos.avaliacoes.api.serializers import AvaliacaoSerializer
+from Pontos_turisticos.comentarios.api.serializers import ComentarioSerializer
+from Pontos_turisticos.core.models import PontoTuristico
+from Pontos_turisticos.atracoes.models import Atracao
+from Pontos_turisticos.endereco.models import Endereco
+from Pontos_turisticos.core.models import Doc_identificacao
 
 
 class Doc_identificacaoSerializer(ModelSerializer):
