@@ -1,5 +1,5 @@
 from rest_framework.viewsets import ModelViewSet
-from Pontos_turisticos.endereco.models import Endereco
+from endereco.models import Endereco
 from .serializers import EnderecoSerializer
 
 class EnderecoViewSet(ModelViewSet):

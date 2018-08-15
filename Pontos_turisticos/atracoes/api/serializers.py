@@ -1,5 +1,5 @@
 from rest_framework.serializers import ModelSerializer
-from Pontos_turisticos.atracoes.models import Atracao
+from atracoes.models import Atracao
 
 class AtracaoSerializer(ModelSerializer):
     class Meta:

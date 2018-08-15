@@ -1,6 +1,6 @@
 from rest_framework.filters import SearchFilter
 from rest_framework.viewsets import ModelViewSet
-from Pontos_turisticos.comentarios.models import Comentario
+from comentarios.models import Comentario
 from .serializers import ComentarioSerializer
 
 class ComentarioViewSet(ModelViewSet):

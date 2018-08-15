@@ -17,7 +17,7 @@ from decouple import config
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = config('SECRET_KEY')
-DEBUG = config('DEBUG', default=False, cast=bool)
+DEBUG = config('DEBUG', default=True, cast=bool)
 ALLOWED_HOSTS = ['pontos--turisticos.herokuapp.com','localhost','127.0.0.1']
 
 
@@ -32,11 +32,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework.authtoken',
-    'Pontos_turisticos.atracoes',
-    'Pontos_turisticos.core',
-    'Pontos_turisticos.comentarios',
-    'Pontos_turisticos.avaliacoes',
-    'Pontos_turisticos.endereco',
+    'atracoes',
+    'core',
+    'comentarios',
+    'avaliacoes',
+    'endereco',
     'django_filters',
 ]
 
@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'Pontos_turisticos.pontos_turisticos.urls'
+ROOT_URLCONF = 'pontos_turisticos.urls'
 
 TEMPLATES = [
     {
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Pontos_turisticos.pontos_turisticos.wsgi.application'
+WSGI_APPLICATION = 'pontos_turisticos.wsgi.application'
 
 
 # Database
@@ -125,3 +125,8 @@ REST_FRAMEWORK = {
 }
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 5
+}

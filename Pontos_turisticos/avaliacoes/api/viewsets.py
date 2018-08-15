@@ -1,5 +1,5 @@
 from rest_framework.viewsets import ModelViewSet
-from Pontos_turisticos.avaliacoes.models import Avaliacao
+from avaliacoes.models import Avaliacao
 from .serializers import AvaliacaoSerializer
 
 class AvaliacaoViewSet(ModelViewSet):

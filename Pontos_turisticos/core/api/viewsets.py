@@ -5,7 +5,7 @@ from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework.viewsets import ModelViewSet
 from django.contrib.auth import get_user_model
 
-from Pontos_turisticos.core.models import PontoTuristico
+from core.models import PontoTuristico
 from .serializers import PontoturisticosSerializer, LoginSerializer
 
 User = get_user_model()
@@ -17,8 +17,7 @@ class LoginViewSet(ModelViewSet):
 
 class PontoTuristicoViewSet(ModelViewSet):
     serializer_class = PontoturisticosSerializer
-    permission_classes = (IsAdminUser,)
-    authentication_classes = (TokenAuthentication,)
+    permission_classes = ()
     filter_backends = (SearchFilter,)
     search_fields = ('nome', 'descricao', 'enderecos__linha1')
 
